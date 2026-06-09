@@ -18,7 +18,7 @@ services:
       - NEO4J_USERNAME=${NEO4J_USERNAME:-neo4j}
       - NEO4J_PASSWORD=${NEO4J_PASSWORD:-Neo4jAdmin2026!}
       - NEXTAUTH_SECRET=${NEXTAUTH_SECRET:-x12bgjydyjhjcghgc}
-      - NEXTAUTH_URL=${NEXTAUTH_URL:-http://localhost:3000}
+      - NEXTAUTH_URL=${NEXTAUTH_URL:-http://sayaakanlawan.net}
     # Konfigurasi ini memungkinkan container berkomunikasi dengan localhost sistem operasi Anda
     extra_hosts:
       - "host.docker.internal:host-gateway"
