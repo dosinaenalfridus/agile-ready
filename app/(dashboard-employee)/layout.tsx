@@ -32,8 +32,8 @@ export default function EmployeeDashboardLayout({
   ];
 
   return (
-    <div className="flex min-h-screen bg-muted/40">
-      <aside className="w-64 bg-background border-r flex flex-col hidden md:flex">
+    <div className="min-h-screen bg-muted/40">
+      <aside className="fixed inset-y-0 left-0 z-50 w-64 bg-background border-r flex flex-col hidden md:flex">
         <div className="h-16 flex items-center px-6 border-b">
           <BarChart3 className="h-6 w-6 text-primary mr-2" />
           <span className="font-bold text-lg">AgileReady</span>
@@ -73,7 +73,7 @@ export default function EmployeeDashboardLayout({
         </div>
       </aside>
 
-      <main className="flex-1 overflow-auto">
+      <main className="md:ml-64 min-h-screen flex flex-col">
         <header className="h-16 md:hidden border-b bg-background flex items-center justify-between px-4">
           <span className="font-bold">AgileReady</span>
           <button onClick={() => signOut({ callbackUrl: '/' })} className="p-2">

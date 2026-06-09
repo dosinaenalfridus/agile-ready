@@ -50,6 +50,7 @@ yarn-error.log*
 next-env.d.ts
 
 # deployment & sensitive exports
-area51.md
-area52.md
+area*.md
+fix_*.js
+generate_*.js
 scratch/

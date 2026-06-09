@@ -32,9 +32,9 @@ export default function AdminDashboardLayout({
   ];
 
   return (
-    <div className="flex min-h-screen bg-muted/40">
+    <div className="min-h-screen bg-muted/40">
       {/* Sidebar */}
-      <aside className="w-64 bg-background border-r flex flex-col hidden md:flex">
+      <aside className="fixed inset-y-0 left-0 z-50 w-64 bg-background border-r flex flex-col hidden md:flex">
         <div className="h-16 flex items-center px-6 border-b">
           <BarChart3 className="h-6 w-6 text-primary mr-2" />
           <span className="font-bold text-lg">AgileReady Admin</span>
@@ -75,7 +75,7 @@ export default function AdminDashboardLayout({
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 overflow-auto">
+      <main className="md:ml-64 min-h-screen flex flex-col">
         {/* Mobile Header */}
         <header className="h-16 md:hidden border-b bg-background flex items-center justify-between px-4">
           <span className="font-bold">AgileReady</span>
