@@ -64,7 +64,10 @@ export default function EmployeeDashboardLayout({
             <p className="text-xs text-muted-foreground">@{session.user.name}</p>
           </div>
           <button
-            onClick={() => signOut({ callbackUrl: '/' })}
+            onClick={async () => {
+              await signOut({ redirect: false });
+              window.location.href = '/';
+            }}
             className="flex items-center gap-3 w-full px-3 py-2 text-muted-foreground hover:text-destructive transition-colors rounded-md hover:bg-muted"
           >
             <LogOut className="h-5 w-5" />
@@ -76,7 +79,10 @@ export default function EmployeeDashboardLayout({
       <main className="md:ml-64 min-h-screen flex flex-col">
         <header className="h-16 md:hidden border-b bg-background flex items-center justify-between px-4">
           <span className="font-bold">AgileReady</span>
-          <button onClick={() => signOut({ callbackUrl: '/' })} className="p-2">
+          <button onClick={async () => {
+            await signOut({ redirect: false });
+            window.location.href = '/';
+          }} className="p-2">
             <LogOut className="h-5 w-5" />
           </button>
         </header>
