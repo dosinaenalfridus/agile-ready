@@ -299,7 +299,7 @@ export default function AssessmentPage() {
       </div>
 
       {/* Submit Section (Floating Bottom) */}
-      <div className="fixed bottom-0 left-0 right-0 p-4 bg-background/95 backdrop-blur-sm border-t flex justify-center z-50">
+      <div className="fixed bottom-0 left-0 md:left-64 right-0 p-4 bg-background/95 backdrop-blur-sm border-t flex justify-center z-40">
         <Button 
           size="lg" 
           className="w-full max-w-2xl text-lg h-14 shadow-xl" 
